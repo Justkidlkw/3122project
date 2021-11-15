@@ -12,6 +12,12 @@ curl localhost:3000
 username: COMP3122
 password: group7
 ```
+
+# UnitTesting
+```
+mvn test
+```
+
 # Stop all container
 ```
 docker-compose down -v
