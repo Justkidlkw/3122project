@@ -1,0 +1,28 @@
+# under this docker directory and run the command
+
+docker-compose up
+
+
+# http://localhost:9001
+# http://localhost:9090/graph
+# http://localhost:3000/
+
+
+
+# build local docker image
+# docker build -f Dockerfile -t docker-api-service .
+
+
+# run docker-api-service
+# docker run -p 9001:9001 docker-api-service
+
+# run prom/prometheus
+# docker run -p 9090:9090 -v prometheus.yml prom/prometheus
+
+# run grafana/grafana
+# docker run -p 3000:3000 grafana/grafana
+
+# run elasticsearch:7.12.1
+# docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.12.1
+
+# go_memstats_alloc_bytes

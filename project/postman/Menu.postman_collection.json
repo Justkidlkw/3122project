@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "aae59855-9ad4-4d7c-a555-dbf8f75bff17",
+		"name": "Menu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"menuStoreId\": 1,\n    \"menuFoodName\": \"ming_store_food_111\",\n    \"menuFoodPrice\": 16.22\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/menus/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"menus",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAllByMenuStoreId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9001/menus/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"menus",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"menuId\": 2,\n    \"menuStoreId\": 1,\n    \"menuFoodName\": \"ming_store_food_3\",\n    \"menuFoodPrice\": 16.2222\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/menus/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"menus",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
