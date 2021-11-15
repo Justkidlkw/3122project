@@ -1,6 +1,15 @@
 # 3122project
 
+#Compile the code
+```
+cd project
+docker-compose up
 ```
 
-open the project folder
+#Grafana
 ```
+curl localhost:3000
+username: COMP3122
+password: group7
+```
+
