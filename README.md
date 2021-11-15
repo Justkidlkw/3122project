@@ -15,7 +15,7 @@ prometheus.yml
     static_configs:
       - targets: ['docker.for.mac.localhost:9001']
       
-Here need to be changed
+Here targets need to be changed
       - targets: ['localhost:9001']
       
 ```
