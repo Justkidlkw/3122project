@@ -4,6 +4,20 @@
 ```
 cd project
 docker-compose up
+
+note that the project is implemented in mac environment,some code need to be changed if run under windows
+Changes:
+prometheus.yml
+
+  - job_name: 'spring-actuator'
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['docker.for.mac.localhost:9001']
+      
+Here need to be changed
+      - targets: ['localhost:9001']
+      
 ```
 
 # Grafana
